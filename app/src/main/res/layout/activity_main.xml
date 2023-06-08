@@ -49,4 +49,52 @@
             android:paddingRight="15dip"
             android:text="Registrarse" />
     </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnVideoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video view"
+
+            />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnCalendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar view" />
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnMapView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Maps" />
+
+        <Button
+            android:id="@+id/btnLineChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gráfico lineal" />
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
